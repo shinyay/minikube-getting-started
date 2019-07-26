@@ -1,4 +1,4 @@
-# Name
+# Minikube Getting Started
 
 Overview
 
@@ -16,6 +16,30 @@ Overview
 ## Usage
 
 ## Installation
+
+### Hyperkit
+
+#### Brew
+```
+$ brew install hyperkit
+```
+
+#### Latest version
+```
+$ curl -LO https://storage.googleapis.com/minikube/releases/latest/docker-machine-driver-hyperkit \
+&& sudo install -o root -g wheel -m 4755 docker-machine-driver-hyperkit /usr/local/bin/
+```
+
+#### Upgrade
+```
+$ curl -LO https://storage.googleapis.com/minikube/releases/latest/docker-machine-driver-hyperkit \
+&& sudo install -o root -g wheel -m 4755 docker-machine-driver-hyperkit /usr/local/bin/
+```
+
+### Default Driver Config
+```
+$ minikube config set vm-driver hyperkit
+```
 
 ## Licence
 
