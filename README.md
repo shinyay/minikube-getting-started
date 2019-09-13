@@ -22,6 +22,9 @@ Overview
 #### Brew
 ```
 $ brew install hyperkit
+$ brew install docker-machine-driver-hyperkit
+$ sudo chown root:wheel /usr/local/opt/docker-machine-driver-hyperkit/bin/docker-machine-driver-hyperkit
+$ sudo chmod u+s /usr/local/opt/docker-machine-driver-hyperkit/bin/docker-machine-driver-hyperkit
 ```
 
 #### Latest version
@@ -36,7 +39,12 @@ $ curl -LO https://storage.googleapis.com/minikube/releases/latest/docker-machin
 && sudo install -o root -g wheel -m 4755 docker-machine-driver-hyperkit /usr/local/bin/
 ```
 
-### Default Driver Config
+### Minikube
+```
+$ brew cask install minikube
+```
+
+#### Default Driver Config
 ```
 $ minikube config set vm-driver hyperkit
 ```
