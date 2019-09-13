@@ -49,6 +49,21 @@ $ brew cask install minikube
 $ minikube config set vm-driver hyperkit
 ```
 
+#### Launch Minikube
+```
+$ minikube start
+😄  minikube v1.3.1 on Darwin 10.14.6
+⚠️  Error checking driver version: exit status 1
+🔥  Creating hyperkit VM (CPUs=2, Memory=2000MB, Disk=20000MB) ...
+🐳  Preparing Kubernetes v1.15.2 on Docker 18.09.8 ...
+💾  Downloading kubeadm v1.15.2
+💾  Downloading kubelet v1.15.2
+🚜  Pulling images ...
+🚀  Launching Kubernetes ...
+⌛  Waiting for: apiserver proxy etcd scheduler controller dns
+🏄  Done! kubectl is now configured to use "minikube"
+```
+
 ### Minikube Addon
 
 ```
