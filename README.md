@@ -44,6 +44,11 @@ $ curl -LO https://storage.googleapis.com/minikube/releases/latest/docker-machin
 $ brew cask install minikube
 ```
 
+#### Environment
+```
+$ set -x MINIKUBE_HOME (pwd)
+
+```
 #### Default Driver Config
 ```
 $ minikube config set vm-driver hyperkit
