@@ -54,6 +54,10 @@ $ set -x MINIKUBE_HOME (pwd)
 $ minikube config set vm-driver hyperkit
 ```
 
+```
+$ minikube config view
+```
+
 #### Launch Minikube
 ```
 $ minikube start
