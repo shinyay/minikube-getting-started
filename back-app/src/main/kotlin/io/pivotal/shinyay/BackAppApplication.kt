@@ -9,3 +9,4 @@ class BackAppApplication
 fun main(args: Array<String>) {
 	runApplication<BackAppApplication>(*args)
 }
+
