@@ -1,0 +1,35 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: backend-app
+spec:
+  selector:
+    app: backend-app
+    tier: backend
+  ports:
+  - protocol: TCP
+    port: 8080
+  type: ClusterIP
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: backend-app
+spec:
+  selector:
+      matchLabels:
+        app: backend-app
+        tier: backend
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        app: backend-app
+        tier: backend
+    spec:
+      containers:
+        - name: backend-app
+          image: shinyay/minikube-back-app:0.0.1
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8080
