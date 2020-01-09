@@ -56,6 +56,8 @@ $ minikube config set vm-driver hyperkit
 
 ```
 $ minikube config view
+$ minikube status
+$ minikube dashboard
 ```
 
 #### Launch Minikube
