@@ -39,6 +39,6 @@ tasks.withType<KotlinCompile> {
 
 tasks {
 	bootJar {
-		archiveFileName.set("app.jar")
+		archiveFileName.set("frontend-app.jar")
 	}
 }
