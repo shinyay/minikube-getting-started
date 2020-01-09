@@ -1,13 +1,13 @@
 #!/usr/bin/env fish
 
 set -g GROUP_ID io.pivotal.shinyay
-set -g ARTIFACT_ID front-app
+set -g ARTIFACT_ID back-app
 set -g NAME $ARTIFACT_ID
 set -g DESCRIPTION "Sample project for Spring Boot"
 set -g PACKAGE $GROUP_ID
 set -g DEPENDENCY web,actuator
 
-curl https://start.spring.io/starter.zip --create-dirs -o ./spring-front/spring.zip \
+curl https://start.spring.io/starter.zip --create-dirs -o ./$ARTIFACT_ID/spring.zip \
 	-d type=gradle-project \
 	-d language=kotlin \
 	-d groupId=$GROUP_ID \
