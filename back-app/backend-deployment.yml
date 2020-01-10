@@ -20,7 +20,7 @@ spec:
       matchLabels:
         app: backend-app
         tier: backend
-  replicas: 3
+  replicas: 2
   template:
     metadata:
       labels:
