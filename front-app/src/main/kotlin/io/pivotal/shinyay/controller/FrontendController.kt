@@ -7,8 +7,9 @@ import org.springframework.web.client.RestTemplate
 
 @RestController
 @RequestMapping
-class FrontendController(val restTemplate: RestTemplate) {
+class FrontendController() {
 
+    val restTemplate = RestTemplate()
     val BACKEND_URL = "http://backend-app:8080"
 
     @GetMapping("/")
